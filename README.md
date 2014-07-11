@@ -9,7 +9,7 @@ Version 0.0.1
 ### How do I get set up? ###
 
 Download the source from GitHub and place the downloaded EP_24LCXX folder in your
-Arduino<version>/libraries/ directory. If the Arduino IDE is running, you will have to 
+Arduino/libraries/ directory. If the Arduino IDE is running, you will have to 
 restart the IDE to see the EP_24LCXX library in the IDE.
 
 To add it to your sketch go to:
@@ -44,9 +44,10 @@ Writing:
 eeprom.writeEEPROM(addr, data, len);
 ```
 
-Where 	addr is a 16 bit address to write to within memory.
-		data is a pointer to the data that should be written to memory.
-		len is the number of bytes that data will use in memory.
+Where,<br>
+addr is a 16 bit address to write to within memory.<br>
+data is a pointer to the data that should be written to memory.<br>
+len is the number of bytes that data will use in memory.<br>
 		
 Reading:
 
@@ -54,9 +55,10 @@ Reading:
 eeprom.readEEROM(aadr, ret, len);
 ```
 
-Where 	addr is a 16 bit address to read from within memory.
-		ret is a pointer to a variable that will hold the data read from memory.
-		len is the number of bytes that should be read from memory.
+Where,<br>
+addr is a 16 bit address to read from within memory.<br>
+ret is a pointer to a variable that will hold the data read from memory.<br>
+len is the number of bytes that should be read from memory.<br>
 
 
 
