@@ -21,12 +21,16 @@ Sketch->Import Library...->Wire
 
 Declare a new EEPROM24 object:
 
+```
 EEPROM24 eeprom;
+```
 
 This will create a new EEPROM24 object with a default i2c address for the eeprom chip: 0x50. 
 To provide a specific address use:
 
+```
 EEPROM eeprom (address); //where address is the i2c address of the chip
+```
 
 To determine the address of your 24LCXX chip use the values you set for the A2, A1, A0 pins:
 Address: 01010A2A1A0
@@ -36,7 +40,9 @@ Using the EEPROM24 object, write or read from the 24LCXX chip.
 
 Writing:
 
+```
 eeprom.writeEEPROM(addr, data, len);
+```
 
 Where 	addr is a 16 bit address to write to within memory.
 		data is a pointer to the data that should be written to memory.
@@ -44,7 +50,9 @@ Where 	addr is a 16 bit address to write to within memory.
 		
 Reading:
 
+```
 eeprom.readEEROM(aadr, ret, len);
+```
 
 Where 	addr is a 16 bit address to read from within memory.
 		ret is a pointer to a variable that will hold the data read from memory.
